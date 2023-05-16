@@ -13,37 +13,39 @@
 </head>
 <body class="container p-0">
     <header>
-        <nav class="navbar navbar-expand-lg mt-2 d-flex justify-content-between position-sticky sticky-top">
-            <div class="col-2">
-                <img src="images/logo.svg" class="img-fluid w-50" alt="logo">
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="col-10 m-auto collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item bg-transparent border-0">DESCRIPTION</li>
-                    <li class="list-group-item bg-transparent border-0">FEATURES</li>
-                    <li class="list-group-item bg-transparent border-0">SCREENS</li>
-                    <li class="list-group-item bg-transparent border-0">
-                        <div class="btn-group" role="group">
-                            <button type="button" class="btn_extra dropdown-toggle p-0 bg-transparent" data-bs-toggle="dropdown" aria-expanded="false">
-                            EXTRA
-                            </button>
-                            <ul class="dropdown-menu p-0 bg-light">
-                                <li><a class="dropdown-item" href="#">ARTICLE DETAILS</a></li>
-                                <li><a class="dropdown-item" href="#">TERMS CONDITIONS</a></li>
-                                <li><a class="dropdown-item" href="#">PRIVACY POLICY</a></li>
-                            </ul>
-                        </div>
-                    </li>   
-                    <li class="btn btn_download">DOWNLOAD</li>  
-                </ul>
+        <nav class="navbar navbar-expand-md m-2">
+            <div class="container-fluid">
+                <div class="navbar-brand col-3 col-md-1">
+                    <img src="images/logo.svg" class="img-fluid" alt="logo">
+                </div>
+                <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end mt-sm-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-md-flex align-items-center">
+                        <li class="list-group-item bg-transparent border-0 nav-item me-3">DESCRIPTION</li>
+                        <li class="list-group-item bg-transparent border-0 nav-item me-3">FEATURES</li>
+                        <li class="list-group-item bg-transparent border-0 nav-item me-3">SCREENS</li>
+                        <li class="list-group-item bg-transparent border-0 nav-item me-3">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn_extra dropdown-toggle p-0 bg-transparent nav-item" data-bs-toggle="dropdown" aria-expanded="false">
+                                EXTRA
+                                </button>
+                                <ul class="dropdown-menu p-0 bg-light">
+                                    <li><a class="dropdown-item drop_text" href="#">ARTICLE DETAILS</a></li>
+                                    <li><a class="dropdown-item drop_text" href="#">TERMS CONDITIONS</a></li>
+                                    <li><a class="dropdown-item drop_text" href="#">PRIVACY POLICY</a></li>
+                                </ul>
+                            </div>
+                        </li>   
+                        <li class="btn btn_download nav-item me-3">DOWNLOAD</li>  
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main class="container m-0 p-0 d-flex flex-column align-items-center">
-        <section class="container-fluid position-relative mt-4">
+        <section class="container-fluid position-relative mt-4 z-1">
             <div class="d-flex justify-content-between">
                 <img src="images/decorative-green-diamond.svg" alt="Green Diamond" id="green_diamond">
                 <img src="images/decorative-yellow-circle.svg" alt="Yellow Circle" id="yellow_circle">

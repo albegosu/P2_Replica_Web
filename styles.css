@@ -18,6 +18,11 @@ nav {
     font-weight: 700;
 }
 
+.drop_text {
+    font-weight: 400;
+    font-size: small;
+}
+
 .btn_download {
     border: 1px solid red;
     border-radius: 2rem;
