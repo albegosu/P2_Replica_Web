@@ -12,47 +12,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="container p-0">
-    <header>
-        <nav class="navbar navbar-expand-md m-2">
+    <header class="m-0 p-0">
+        <nav class="navbar navbar-expand-md m-2 sticky-top">
             <div class="container-fluid">
                 <div class="navbar-brand col-3 col-md-1">
-                    <img src="images/logo.svg" class="img-fluid" alt="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" class="img-fluid" alt="logo">
+                    </a>
                 </div>
                 <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end mt-sm-2" id="navbarSupportedContent">
                     <ul class="navbar-nav d-md-flex align-items-center">
-                        <li class="list-group-item bg-transparent border-0 nav-item me-3">DESCRIPTION</li>
-                        <li class="list-group-item bg-transparent border-0 nav-item me-3">FEATURES</li>
-                        <li class="list-group-item bg-transparent border-0 nav-item me-3">SCREENS</li>
+                        <li class="list-group-item bg-transparent border-0 nav-item me-3"><a href="#descriptionSection" class="nav_text link_nav_section">DESCRIPTION</a></li>
+                        <li class="list-group-item bg-transparent border-0 nav-item me-3"><a href="#featuresSection" class="nav_text link_nav_section">FEATURES</a></li>
+                        <li class="list-group-item bg-transparent border-0 nav-item me-3"><a href="#screensSection" class="nav_text link_nav_section">SCREENS</a></li>
                         <li class="list-group-item bg-transparent border-0 nav-item me-3">
                             <div class="btn-group" role="group">
-                                <button type="button" class="btn_extra dropdown-toggle p-0 bg-transparent nav-item" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn_extra dropdown-toggle p-0 bg-transparent nav-item nav_text" data-bs-toggle="dropdown" aria-expanded="false">
                                 EXTRA
                                 </button>
                                 <ul class="dropdown-menu p-0 bg-light">
-                                    <li><a class="dropdown-item drop_text" href="#">ARTICLE DETAILS</a></li>
-                                    <li><a class="dropdown-item drop_text" href="#">TERMS CONDITIONS</a></li>
-                                    <li><a class="dropdown-item drop_text" href="#">PRIVACY POLICY</a></li>
+                                    <li><a class="dropdown-item drop_text nav_extra_text" href="#">ARTICLE DETAILS</a></li>
+                                    <li><a class="dropdown-item drop_text nav_extra_text" href="#">TERMS CONDITIONS</a></li>
+                                    <li><a class="dropdown-item drop_text nav_extra_text" href="#">PRIVACY POLICY</a></li>
                                 </ul>
                             </div>
                         </li>   
-                        <li class="btn btn_download nav-item me-3">DOWNLOAD</li>  
+                        <li class="btn nav-item me-3"><a href="https://factoriaf5.org/" target="_blank" class="btn_download ">DOWNLOAD</a></li>  
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main class="container m-0 p-0 d-flex flex-column align-items-center">
-        <section class="container-fluid position-relative mt-4 z-1">
+        <section class="container-fluid position-relative mt-4 z-1 p-0" id="mobileApp">
             <div class="d-flex justify-content-between">
                 <img src="images/decorative-green-diamond.svg" alt="Green Diamond" id="green_diamond">
                 <img src="images/decorative-yellow-circle.svg" alt="Yellow Circle" id="yellow_circle">
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center">
-                <h1>Mobile App Landing Page</h1>
-                <p>Start focusing on your goals and get more things done with Sync mobile application. It's the first app to harness the power of social connections to help you stay focused and get organized</p>
+                <h1 class="text-center">Mobile App Landing Page</h1>
+                <p class="w-75 text-center">Start focusing on your goals and get more things done with Sync mobile application. It's the first app to harness the power of social connections to help you stay focused and get organized</p>
                 <div class="d-flex btn_group">
                     <button class="btn_section d-flex align-items-center justify-content-center p-3 m-auto" type="button">
                         <img src="images/apple-24.png" class="img-fluid" alt="logo apple">
@@ -64,43 +66,74 @@
                     </button>
                 </div>
             </div>
-            <img src="images/header-iphone.png" alt="mobile photo" class="img-fluid h-50 mt-5" id="img_phone">
+            <img src="images/header-iphone.png" alt="mobile photo" class="img-fluid h-50 mt-5" id="rotating-image">
+            <ul class="list-group list-group-horizontal d-flex justify-content-center align-items-center row m-0 p-0">
+                <li class="list-group-item bg-transparent border-0 col-3 d-flex flex-column align-items-center">
+                    <div>
+                        <img src="/images/9F47DFB5-952B-45AB-8592-A0B70FA1C4EA.png" class="li_icon1" alt="people">
+                    </div>
+                    <p class="mt-2">Identify Goals</p>
+                </li>
+                <li class="list-group-item bg-transparent border-0 col-3 d-flex flex-column align-items-center">
+                    <div>
+                        <img src="/images/5EDF65CE-C5BF-41AE-A2D1-65BCFF60610C.png" class="li_icon2" alt="code">
+                    </div>
+                    <p class="mt-2">Situation Analysis</p>
+                </li>
+                <li class="list-group-item bg-transparent border-0 col-3 d-flex flex-column align-items-center">
+                    <div>
+                        <img src="/images/F91326ED-B8BE-4D88-966E-FBA0841E90C8.png" class="li_icon3" alt="tools">
+                    </div>
+                    <p class="mt-2">Tasks Settings</p>
+                </li>
+                <li class="list-group-item bg-transparent border-0 col-3 d-flex flex-column align-items-center">
+                    <div>
+                        <img src="/images/FAE855F7-67D9-4E49-8C16-8FCF80AE60D2.png" class="li_icon4" alt="social">
+                    </div>
+                    <p class="mt-2">Social Interaction</p>
+                </li>
+                <li class="list-group-item bg-transparent border-0 col-3 d-flex flex-column align-items-center">
+                    <div>
+                        <img src="/images/BA6A9CD6-05F1-4381-A26F-D39B7A7A45D8.png" class="li_icon5" alt="cohete">
+                    </div>
+                    <p class="mt-2">Get Things Done</p>
+                </li>
+            </ul>
         </section>
         <img src="images/decorative-blue-circle.svg" alt="Blue circle" id="blue_circle" class="z-0 position-absolute">
         <img src="images/decorative-white-circle.svg" alt="White circle" id="white1_circle" class="z-n1 position-absolute">
         <img src="images/decorative-white-circle.svg" alt="White circle" id="white2_circle" class="z-n1 position-absolute">
-        <ul class="list-group list-group-horizontal d-flex justify-content-center align-items-center row m-0 p-0">
-            <li class="list-group-item bg-transparent border-0 col-3">
-                <div>
-                    <img src="" alt="">
+        <hr id="descriptionSection">
+        <section class="container-fluid section_box">
+            <section class="container row m-4">
+                <img src="images/description-1-app.png" class="col-md-6 col-12 img-fluid mb-4 mb-md-0" alt="description_section">
+                <div class="col justify-content-around">
+                    <h2>Organize Your Time And Start Getting Results</h2>
+                    <p>Sync is the first mobile app on the market to harness the power of social connections to help you stop procrastinating and start getting things done. Give it a try and see the changes right away</p>
+                    <ul>
+                        <li class="text_list">Analyse and evaluate your current status and productivity</li>
+                        <li class="text_list">Begin monitoring your day to day routine with Sync app</li>
+                        <li class="text_list">See the improved results in no more than a couple of weeks</li>
+                    </ul>
+                    <button class="btn_section p-0 m-0">LIGHTBOX</button>
                 </div>
-                <p>Identify Goals</p>
-            </li>
-            <li class="list-group-item bg-transparent border-0 col-3">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <p>Situation Analysis</p>
-            </li>
-            <li class="list-group-item bg-transparent border-0 col-3">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <p>Tasks Settings</p>
-            </li>
-            <li class="list-group-item bg-transparent border-0 col-3">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <p>Social Interaction</p>
-            </li>
-            <li class="list-group-item bg-transparent border-0 col-3">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <p>Get Things Done</p>
-            </li>
-        </ul>
+            </section>
+            <section>
+                <h2>Calendar</h2>
+            </section>
+        </section>
+        <hr id="featuresSection">
+        <section class="container section_box">
+            <h2>Testimonials</h2>
+        </section>
+        <hr id="screensSection">
+        <section class="container section_box">
+            <h2>Screens</h2>
+        </section>
     </main>
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
+    <script src="functions.js"></script>
 </body>
 </html>

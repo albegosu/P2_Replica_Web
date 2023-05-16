@@ -5,12 +5,48 @@
 body {
     width: 60vw;
     align-content: center;
-    background-color: rgb(237, 242, 247, 0.5);
+    background-color:rgb(237, 242, 247, 0.5);
 }
 
-nav {
+.parallax {
+    /* The image used */
+    background-image: url("/images/header-iphone.png");
+    min-height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+header {
+    position: sticky;
+    top: 0rem;
+    z-index: 5;
+}
+
+hr {
+    height: 5rem;
+}
+
+.nav_text {
     font-weight: 700;
-    font-size: small;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_text:hover {
+    color: red;
+}
+
+.link_nav_section-active {
+    color: red;
+}
+
+.nav_extra_text:hover {
+    color: red;
 }
 
 .btn_extra {
@@ -30,6 +66,14 @@ nav {
     height: 2rem;;
     font-weight: 700;
     font-size: small;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.btn_download:hover {
+    background-color: red;
+    color: white;
+    filter: drop-shadow(0 0 0.5rem crimson);
 }
 
 #green_diamond {
@@ -60,18 +104,40 @@ nav {
 
 .btn_section {
     background-color: red;
+    color: white;
     border-radius: 20px;
     border: none;
     width: 8rem;
     height: 2.1rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.btn_section:hover {
+    filter: drop-shadow(0 0 0.5rem crimson);
 }
 
 .btn_text {
     color: white;
     font-size: 0.6rem;
     font-weight: bold;
-    width: 100%;
 }
+
+#rotating-image:hover {
+    width: 100%;
+    height: 100%;
+    animation: rotate 5s;
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
 
 button img {
     width: 0.8rem;
@@ -81,15 +147,83 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-weight: bolder;
+}
+
 p {
     font-weight: lighter;
     font-size: 0.7rem;
     color: grey;
-    width: 80%;
 }
 
 li p {
     font-size: 0.6rem;
     font-weight: bold;
     color: black;
+}
+
+.li_icon1 {
+    width: 5rem;
+    padding: 1rem;
+    background-color: rgb(159, 107, 215, 0.2);
+    border-radius: 50%;
+}
+
+.li_icon1:hover {
+    filter: drop-shadow(0 0 0.5rem rgb(159, 107, 215));
+}
+
+.li_icon2 {
+    width: 5rem;
+    padding: 1rem;
+    background-color: rgba(107, 215, 129, 0.2);
+    border-radius: 50%;
+}
+
+.li_icon2:hover {
+    filter: drop-shadow(0 0 0.5rem rgba(107, 215, 129));
+}
+
+.li_icon3 {
+    width: 5rem;
+    padding: 1rem;
+    background-color: rgba(227, 107, 107, 0.2);
+    border-radius: 50%;
+}
+
+.li_icon3:hover {
+    filter: drop-shadow(0 0 0.5rem rgba(227, 107, 107));
+}
+
+.li_icon4 {
+    width: 5rem;
+    padding: 1rem;
+    background-color: rgba(236, 223, 90, 0.2);
+    border-radius: 50%;
+}
+
+.li_icon4:hover {
+    filter: drop-shadow(0 0 0.5rem rgba(236, 223, 90));
+}
+
+.li_icon5 {
+    width: 5rem;
+    padding: 1rem;
+    background-color: rgba(100, 163, 218, 0.2);
+    border-radius: 50%;
+}
+
+.li_icon5:hover {
+    filter: drop-shadow(0 0 0.5rem rgba(100, 163, 218));
+}
+
+.text_list {
+    font-weight: lighter;
+    font-size: 0.7rem;
+    color: grey;
+}
+
+footer {
+    height: 500px;
 }
