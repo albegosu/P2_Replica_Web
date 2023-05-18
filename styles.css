@@ -34,6 +34,12 @@ header {
     height: 4rem;
 }
 
+@media (max-width: 800px) {
+    .hr_separador {
+        height: 3rem;
+    }
+}
+
 .featuresSection {
     height: 3rem;
 }
@@ -112,6 +118,10 @@ header {
     right: -5rem;
 }
 
+#mobileApp {
+    width: 100%;
+}
+
 .btn_section {
     background-color: red;
     color: white;
@@ -165,6 +175,10 @@ p {
     font-weight: lighter;
     font-size: 0.7rem;
     color: grey;
+}
+
+.img_phone {
+    max-width: 80vw;
 }
 
 li p {
@@ -306,6 +320,7 @@ li p {
     animation-iteration-count: infinite;
     transform: scale(1.2);
     transition: 2s;
+    margin-bottom: 6rem;
 }
 
 @keyframes example {
