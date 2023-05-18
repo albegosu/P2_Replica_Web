@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="overflow-x-hidden">
-    <header class="container">
-        <nav class="navbar navbar-expand-md m-2 sticky-top">
+    <header class="px-4">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md sticky-top">
             <div class="container-fluid">
                 <div class="navbar-brand col-3 col-md-1">
                     <a href="index.html">
@@ -25,9 +26,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end mt-sm-2" id="navbarSupportedContent">
                     <ul class="navbar-nav d-md-flex align-items-center">
-                        <li class="list-group-item bg-transparent border-0 nav-item me-3"><a href="#descriptionSection" class="nav_text link_nav_section">DESCRIPTION</a></li>
-                        <li class="list-group-item bg-transparent border-0 nav-item me-3"><a href="#featuresSection" class="nav_text link_nav_section">FEATURES</a></li>
-                        <li class="list-group-item bg-transparent border-0 nav-item me-3"><a href="#screensSection" class="nav_text link_nav_section">SCREENS</a></li>
+                        <li class="list-group-item bg-transparent border-0 nav-item me-3"><a href="#descriptionSection" class="nav_text link_nav_section" id="nav_description">DESCRIPTION</a></li>
+                        <li class="list-group-item bg-transparent border-0 nav-item me-3"><a href="#featuresSection" class="nav_text link_nav_section" id="nav_features">FEATURES</a></li>
+                        <li class="list-group-item bg-transparent border-0 nav-item me-3"><a href="#screensSection" class="nav_text link_nav_section" id="nav_screens">SCREENS</a></li>
                         <li class="list-group-item bg-transparent border-0 nav-item me-3">
                             <div class="btn-group dropdown" role="group">
                                 <button type="button" class="btn_extra dropdown-toggle p-0 bg-transparent nav-item nav_text" id="dropdownMenuButton" data-toggle="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,13 +41,15 @@
                                 </ul>
                             </div>
                         </li>   
-                        <li class="btn nav-item me-3"><a href="https://factoriaf5.org/" target="_blank" class="btn_download ">DOWNLOAD</a></li>  
+                        <li class="btn nav-item"><a href="https://factoriaf5.org/" target="_blank" class="btn_download ">DOWNLOAD</a></li>  
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="m-0 p-0 d-flex flex-column align-items-center">
+    <!-- MAIN -->
+    <main class="m-0 p-0 d-flex flex-column align-items-center scroller">
+        <!-- FIRST SECTION -->
         <section class="position-relative mt-4 z-1 p-0" id="mobileApp">
             <div class="d-flex justify-content-between mx-2">
                 <img src="images/decorative-green-diamond.svg" alt="Green Diamond" id="green_diamond">
@@ -105,10 +108,13 @@
                 </li>
             </ul>
         </section>
+        <!-- SEPARATOR -->
         <hr id="descriptionSection" class="hr_separador">
+        <!-- SECTION DESCRIPTION -->
         <section class="section_box">
+            <!-- DESCRIPTION 1 -->
             <section class="row m-4 px-md-5">
-                <img src="images/description-1-app.png" class="col-md-6 col-12 img-fluid mb-4 mb-md-0" alt="description_section">
+                <img src="images/description-1-app.png" class="col-md-6 col-12 mt-4 mt-md-0 img-fluid mb-4 mb-md-0" alt="description_section">
                 <div class="col justify-content-around">
                     <h2>Organize Your Time And Start Getting Results</h2>
                     <p>Sync is the first mobile app on the market to harness the power of social connections to help you stop procrastinating and start getting things done. Give it a try and see the changes right away</p>
@@ -120,6 +126,7 @@
                     <button class="btn_section p-0 m-0">LIGHTBOX</button>
                 </div>
             </section>
+            <!-- DESCRIPTION 2 -->
             <section class="row my-5 dark_section p-3 p-md-5"> 
                 <div class="col justify-content-around">
                     <div class="row row-cols-md-1 row-cols-6">
@@ -162,10 +169,12 @@
                     <button class="btn_section p-0 m-0">TERMS</button>
                     <button class="btn_section p-0 m-0" id="btn_privacy">PRIVACY</button>
                 </div>
-                <img src="images/description-2-app.png" alt="description-2-app" class="col-md-6 col-12 img-fluid mt-4 mt-md-0">
+                <img src="images/description-2-app.png" alt="description-2-app" class="col-md-6 col-12 img-fluid mt-4 mt-md-0 calendar_img">
             </section>
         </section>
+        <!-- SEPARATOR -->
         <hr id="featuresSection"  class="hr_separador">
+        <!-- SECTION TESTIMONIALS -->
         <section class="container section_box">
             <h2 class="text-center">User Testimonials</h2>
             <section class="row mt-5">
@@ -216,38 +225,40 @@
                 </article>
             </section>
         </section>
+        <!-- SEPARATOR -->
         <hr id="screensSection" class="hr_separador">
-        <section class="">
-            <ul class="dark_section list-group list-group-horizontal d-flex justify-content-center align-items-center justify-content-between m-0 p-5">
-                <li class="list-group-item bg-transparent border-0 d-flex flex-column align-items-center">
+        <!-- SECTION SCREENS -->
+        <section>
+            <ul class="dark_section list-group list-group-horizontal d-flex justify-content-center align-items-center justify-content-between m-0 p-5 row">
+                <li class="list-group-item bg-transparent border-0 d-flex flex-column align-items-center col col-md-2 screens_container">
                     <div>
                         <img src="/images/9F47DFB5-952B-45AB-8592-A0B70FA1C4EA.png" class="screens_icon" alt="people">
                     </div>
                     <p class="mt-1 numbers_screens">231</p>
                     <p class="text_views">Happy Users</p>
                 </li>
-                <li class="list-group-item bg-transparent border-0 d-flex flex-column align-items-center">
+                <li class="list-group-item bg-transparent border-0 d-flex flex-column align-items-center col col-md-2 screens_container">
                     <div>
                         <img src="/images/5EDF65CE-C5BF-41AE-A2D1-65BCFF60610C.png" class="screens_icon" alt="code">
                     </div>
                     <p class="mt-2 numbers_screens">385</p>
                     <p class="text_views">Issues Solved</p>
                 </li>
-                <li class="list-group-item bg-transparent border-0 d-flex flex-column align-items-center">
+                <li class="list-group-item bg-transparent border-0 d-flex flex-column align-items-center col col-md-2 screens_container">
                     <div>
                         <img src="/images/F91326ED-B8BE-4D88-966E-FBA0841E90C8.png" class="screens_icon" alt="tools">
                     </div>
                     <p class="mt-2 numbers_screens">159</p>
                     <p class="text_views">Good Reviews</p>
                 </li>
-                <li class="list-group-item bg-transparent border-0 d-flex flex-column align-items-center">
+                <li class="list-group-item bg-transparent border-0 d-flex flex-column align-items-center col col-md-2 screens_container">
                     <div>
                         <img src="/images/FAE855F7-67D9-4E49-8C16-8FCF80AE60D2.png" class="screens_icon" alt="social">
                     </div>
                     <p class="mt-2 numbers_screens">127</p>
                     <p class="text_views">Case Studies</p>
                 </li>
-                <li class="list-group-item bg-transparent border-0 d-flex flex-column align-items-center">
+                <li class="list-group-item bg-transparent border-0 d-flex flex-column align-items-center col col-md-2 screens_container">
                     <div>
                         <img src="/images/BA6A9CD6-05F1-4381-A26F-D39B7A7A45D8.png" class="screens_icon" alt="cohete">
                     </div>
@@ -257,10 +268,10 @@
             </ul>
             <section>
                 <div>
-                    <img src="images/download-iphone.png" alt="phone screens" class="img-fluid h-50 mt-5">
+                    <img src="images/download-iphone.png" alt="phone screens" class="img-fluid h-50 mt-5" id="phone_anima">
                 </div>
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <p class="w-75 text-center">Do you feel like you're wasting time with small stuff instead of working towards your goals? Start using Sync to organize your time and get a grip on your personal development</p>
+                    <p class="w-75 text-center z-2">Do you feel like you're wasting time with small stuff instead of working towards your goals? Start using Sync to organize your time and get a grip on your personal development</p>
                     <div class="d-flex btn_group">
                         <button class="btn_section d-flex align-items-center justify-content-center p-3 m-auto" type="button">
                             <img src="images/apple-24.png" class="img-fluid" alt="logo apple">
@@ -275,8 +286,50 @@
             </section>
         </section>
     </main>
-    <footer class="footer">
-        <p>Footer</p>
+    <!-- SEPARATOR -->
+    <hr class="mt-5">
+    <!-- FOOTER -->
+    <footer class="footer position-sticky">
+        <section class="row p-4">
+            <article class="col justify-content-center">
+                <h3>Contact Info</h3>
+                    <div class="d-flex mb-2 align-items-center">
+                        <img src="images/location-dot-solid.svg" alt="location icon" class="icon_footer">
+                        <p class="m-0 ms-2">22 Innovation Street, CA, US</p>
+                    </div>
+                    <div class="d-flex mb-2 align-items-center">
+                        <img src="images/envelope-solid.svg" alt="email icon" class="icon_footer">
+                        <p class="m-0 ms-2">office@syncmobile.com</p>
+                    </div>
+                    <div class="d-flex mb-2 align-items-center">
+                        <img src="images/phone-solid.svg" alt="phone icon" class="icon_footer">
+                        <p class="m-0 ms-2">+44 376 945 23</p>
+                    </div> 
+            </article>
+            <article class="col">
+                <h3>Value Links</h3>
+                <section class="d-flex flex-column">
+                    <a href="#" class="mb-2">Terms & Conditions</a>
+                    <a href="#" class="mb-2">Privacy Policy</a>
+                    <a href="#" class="mb-2">Article Details</a>
+                </section>
+            </article>
+            <article class="col">
+                <h3>Other Apps</h3>
+                <section class="d-flex flex-column">
+                    <a href="#" class="mb-2">Scientific Calculator</a>
+                    <a href="#" class="mb-2">Advanced Timer</a>
+                    <a href="#" class="mb-2">Music Store</a>
+                </section>
+            </article>
+            <div class="col d-flex">
+                <a href="#"><img src="images/facebook.svg" class="logos_footer ml-4" alt="logo facebook"></a>
+                <a href="#"><img src="images/twitter.svg" class="logos_footer ml-4" alt="logo twitter"></a>
+                <a href="#"><img src="images/pinterest.svg" class="logos_footer ml-4" alt="logo pinterest"></a>
+                <a href="#"><img src="images/instagram.svg" class="logos_footer ml-4" alt="logo instagram"></a>
+            </div>
+        </section>
+        <p class="text-center">Copyright © 2020 Inovatik - All rights reserved</p>
     </footer>
     <script src="functions.js"></script>
 </body>
